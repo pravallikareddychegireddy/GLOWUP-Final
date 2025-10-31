@@ -1,0 +1,13 @@
+﻿# Ignore node modules and common build files
+node_modules/
+dist/
+.env
+.DS_Store
+.vscode/
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# lockfiles (optional to keep)
+# package-lock.json
+yarn.lock
