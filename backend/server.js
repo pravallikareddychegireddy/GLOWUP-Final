@@ -11,8 +11,7 @@ app.use(cors());
 /* ================================================================
    🌸 DATABASE CONNECTION
 ================================================================ */
-mongoose
-  .connect("mongodb://127.0.0.1:27017/glowup", {
+mongoose.connect(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/glowup", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
