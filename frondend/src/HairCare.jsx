@@ -11,7 +11,7 @@ export default function HairCare() {
     if (!hairType) return alert("Please select your hair type");
 
     try {
-      const response = await axios.get(`https://glowup-final-5.onrender.com/api/hair/${hairType}`);
+      const response = await axios.get(`https://glowup-final-n.onrender.com/api/hair/${hairType}`);
 
       // Navigate to result page and pass data
       navigate("/hair-result", { state: { data: response.data } });
