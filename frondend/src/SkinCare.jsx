@@ -11,7 +11,7 @@ export default function SkinCare() {
     if (!skinType) return alert("Please select your skin type");
 
     try {
-      const response = await axios.get(`https://glowup-final-5.onrender.com/api/skin/${skinType}`);
+      const response = await axios.get(`https://glowup-final-n.onrender.com/api/skin/${skinType}`);
 
       // Navigate to result page and pass data
       navigate("/skin-result", { state: { data: response.data } });
