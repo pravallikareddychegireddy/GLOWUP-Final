@@ -11,7 +11,7 @@ export default function Signup() {
   const handleSignup = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/signup", { username, password })
+      .post("https://glowup-final-1.onrender.com/signup", { username, password })
       .then((res) => {
         alert("Signup Successful");
         navigate("/"); // redirect to login page
