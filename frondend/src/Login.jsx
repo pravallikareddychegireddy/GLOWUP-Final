@@ -11,7 +11,7 @@ export default function AuthForm() {
   const handleLogin = (e) => {
     e.preventDefault();
     axios
-      .post("https://glowup-final-ba.onrender.com/login", { username, password })
+      .post("https://glowup-final-5.onrender.com/login", { username, password })
       .then((res) => {
         localStorage.setItem("token", res.data.token);
         alert("Login Successful");
