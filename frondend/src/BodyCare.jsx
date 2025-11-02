@@ -16,7 +16,7 @@ export default function BodyCare() {
 
     try {
       const response = await axios.get(
-        `https://glowup-final-1.onrender.com/api/body/${encodeURIComponent(goal)}`
+        `https://glowup-final-ba.onrender.com/api/body/${encodeURIComponent(goal)}`
       );
       navigate("/body-result", { state: { data: response.data } });
     } catch (error) {
